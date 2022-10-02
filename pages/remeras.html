@@ -86,68 +86,133 @@
             </div>
         </header>
         <!-- Main -->
-        <main>
-            <h2>REMERAS</h2>
-            <p>FILTRAR</p>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <a href="../pages/eleccion.html"><img src="../img/ropa/card-dos.jpg" class="img-fluid rounded-start" alt="..."></a>
+        <main class="animate__animated animate__fadeInUp">
+            <h2 class="titulo-remera">REMERAS</h2>
+            <div class="filtro">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">FILTRAR
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasExampleLabel">Filtrar</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="offcanvas-body">
+                        <div class="dropdown mt-3">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Talles
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">S</a></li>
+                                <li><a class="dropdown-item" href="#">M</a></li>
+                                <li><a class="dropdown-item" href="#">L</a></li>
+                                <li><a class="dropdown-item" href="#">XL</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Color
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Claros</a></li>
+                                <li><a class="dropdown-item" href="#">Oscuros</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Tela
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Lycra</a></li>
+                                <li><a class="dropdown-item" href="#">Algodón</a></li>
+                                <li><a class="dropdown-item" href="#">Microfibra</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="../img/ropa/card-dos.jpg" class="img-fluid rounded-start" alt="...">
+            <div class="cards-remeras">
+                <div class="card">
+                    <a href="../pages/eleccion.html">
+                        <img src="../img/ropa/card-dos.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="../img/ropa/card-dos.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                    <div class="card-body card-logos">
+                        <a href="#" class="card-link"><img src="../img/logos/carrito.png" alt=""></a>
+                        <a href="#" class="card-link"><img src="../img/logos/corazon.png" alt=""></a>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="../img/ropa/card-dos.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="card">
+                    <a href="">
+                        <img src="../img/ropa/card-dos.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                    <div class="card-body card-logos">
+                        <a href="#" class="card-link"><img src="../img/logos/carrito.png" alt=""></a>
+                        <a href="#" class="card-link"><img src="../img/logos/corazon.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img src="../img/ropa/card-dos.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body card-logos">
+                        <a href="#" class="card-link"><img src="../img/logos/carrito.png" alt=""></a>
+                        <a href="#" class="card-link"><img src="../img/logos/corazon.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img src="../img/ropa/card-dos.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body card-logos">
+                        <a href="#" class="card-link"><img src="../img/logos/carrito.png" alt=""></a>
+                        <a href="#" class="card-link"><img src="../img/logos/corazon.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img src="../img/ropa/card-dos.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body card-logos">
+                        <a href="#" class="card-link"><img src="../img/logos/carrito.png" alt=""></a>
+                        <a href="#" class="card-link"><img src="../img/logos/corazon.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img src="../img/ropa/card-dos.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body card-logos">
+                        <a href="#" class="card-link"><img src="../img/logos/carrito.png" alt=""></a>
+                        <a href="#" class="card-link"><img src="../img/logos/corazon.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </main>
         <!-- Footer -->
-        <footer>
+        <footer class="animate__animated animate__fadeInUp">
             <p>Todos los derechos reservados 2022</p>
             <a href="">Sobre nosotros</a>
         </footer>

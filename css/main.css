@@ -144,6 +144,74 @@ main .form-ingreso .boton-crearcuenta a{
 }
 
 
+/* Estilos al main Remeras */
+main .titulo-remera{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+main .filtro a{
+    font-weight: bold;
+}
+
+main .filtro .offcanvas .offcanvas-header{
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+main .filtro .offcanvas .offcanvas-header h3{
+    font-weight: bold;
+}
+
+main .filtro .offcanvas .offcanvas-body .dropdown button{
+    font-weight: bold;
+}
+
+main .cards-remeras{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+main .cards-remeras .card{
+    width: 20rem;
+    margin: auto;
+}
+
+main .cards-remeras .card a img{
+    width: 100%;
+}
+
+main .cards-remeras .card .card-logos a img{
+    width: 25px;
+    height: 25px;
+}
+
+main .cards-remeras .card .card-logos{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Estilos al main Eleccion */
+main .eleccion{
+    margin: auto;
+    width: 28rem;
+}
+
+main .eleccion .card-body .card-title, main .eleccion .card-body .card-text, main .eleccion .card-body .card-boton{
+    font-weight: bold;
+}
+
+main .eleccion .card-body .card-boton{
+    background-color: rgb(59, 59, 59);
+}
+
+
+
 /* Estilos al footer Index */
 footer{
     display: flex;
@@ -169,9 +237,9 @@ footer a{
 
 
 
-/* Media querie */
+/* Media querie desktop */
 @media screen and (min-width:600px) {
-    /* Estilos al header Index */
+    /* Estilos al header Index desktop */
     header .navbar{
         display: none;
     }
@@ -249,7 +317,7 @@ footer a{
     }
 
 
-    /* Estilos al main Index */
+    /* Estilos al main Index desktop */
     main .nav-main{
         display: flex;
         margin: 2rem;
@@ -281,7 +349,7 @@ footer a{
     }
 
 
-    /* Estilos al main Login */
+    /* Estilos al main Login desktop */
     main .form-ingreso{
         margin-top: 1rem;
         margin-bottom: 2.18rem;
@@ -292,4 +360,29 @@ footer a{
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+
+
+        /* Estilos al main Remeras desktop */
+        main .cards-remeras{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+
+        /* Estilos al main Eleccion desktop */
+        main .eleccion{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 32.35rem;
+        }
+        
+        main .eleccion .card-body{
+            text-align: center;
+            align-self: center;
+        }
 }
+
+
+
