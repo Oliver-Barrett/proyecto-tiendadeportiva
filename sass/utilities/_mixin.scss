@@ -1,0 +1,15 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin logos ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin posicion ($display, $ubicacion){
+    display: $display;
+    justify-content: $ubicacion;
+}

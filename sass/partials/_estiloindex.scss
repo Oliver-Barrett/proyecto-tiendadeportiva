@@ -1,0 +1,99 @@
+/* Estilos al index */
+/* Header */
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    background-image: linear-gradient(to bottom, $color-principal, rgb(255, 255, 255));
+    .navbar{
+        margin-left: 1.5rem;
+        .menu-hamburguesa{
+            font-weight: $letra-negrita;
+            .dropdown-item{
+                font-weight: $letra-negrita;
+            }
+            h2{
+                font-weight: $letra-negrita;
+            }
+            .offcanvas-header{
+                border-bottom: 1px solid rgb(192, 192, 192);
+            }
+        }
+    }
+    .logo-lupa{
+        display: none;
+    }
+    .logo-usuario{
+        margin-top: 10px;
+        ul{
+            list-style: none;
+            li a img{
+                @include logos(30px, 30px);
+            }
+        }
+    }
+    .logo-corcar{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        h1{
+            margin-top: 10px;
+            color: black;
+            font-weight: $letra-negrita;
+            filter: drop-shadow(3px 4px 2px rgb(141, 141, 141));
+        }
+    }
+}
+
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    gap: 1.5rem;
+    .nav-main{
+        display: none;
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .cards-dos{
+        display: flex;
+        gap: 0.8rem;
+        padding-bottom: 0.5rem;
+        img{
+            width: 48%;
+            margin: auto;
+        }
+    }
+}
+
+/* Footer */
+footer{
+    @include posicion(flex, space-between);
+    align-items: center;
+    background-image: linear-gradient(to top, $color-principal, white);
+    height: 3rem;
+    p{
+        display: inline-block;
+        font-weight: $letra-negrita;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        font-weight: $letra-negrita;
+        margin-right: 1rem;
+    }
+}
+
+

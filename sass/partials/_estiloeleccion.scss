@@ -1,0 +1,20 @@
+/* Estilos eleccion */
+/* Main */
+main{
+    .eleccion{
+        margin: auto;
+        width: 28rem;
+        .card-body{
+            .card-title{
+                font-weight: $letra-negrita;
+            }
+            .card-text{
+                font-weight: $letra-negrita;
+            }
+            .card-boton{
+                font-weight: $letra-negrita;
+                background-color: rgb(59, 59, 59);
+            }
+        }
+    }
+}

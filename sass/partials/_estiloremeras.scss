@@ -1,0 +1,53 @@
+/* Estilos a remeras */
+/* Main */
+main{
+    .titulo-remera{
+        text-align: center;
+        margin-top: 2rem;
+        font-weight: $letra-negrita;
+    }
+    .filtro{
+        a{
+            font-weight: $letra-negrita;
+        }
+        .offcanvas{
+            .offcanvas-header{
+                border-bottom: 1px solid rgb(192, 192, 192);
+                h3{
+                    font-weight: $letra-negrita;
+                }
+            }
+            .offcanvas-body{
+                .dropdown{
+                    button{
+                        font-weight: $letra-negrita;
+                    }
+                }
+            }
+        }
+    }
+    .cards-remeras{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .card{
+            width: 20rem;
+            margin: auto;
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+            .card-logos{
+                @include posicion(flex, space-around);
+                padding: 5px;
+                margin-bottom: 10px;
+                a{
+                    img{
+                        @include logos(25px, 25px);
+                    }
+                }
+            }
+        }
+    }
+}
