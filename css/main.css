@@ -22,7 +22,7 @@ header {
       font-weight: bold; }
       header .navbar .menu-hamburguesa .dropdown-item {
         font-weight: bold; }
-      header .navbar .menu-hamburguesa h2 {
+      header .navbar .menu-hamburguesa h1 {
         font-weight: bold; }
       header .navbar .menu-hamburguesa .offcanvas-header {
         border-bottom: 1px solid silver; }
@@ -38,12 +38,9 @@ header {
   header .logo-corcar {
     display: none; }
   header a {
-    text-decoration: none; }
-    header a h1 {
-      margin-top: 10px;
-      color: black;
-      font-weight: bold;
-      filter: drop-shadow(3px 4px 2px #8d8d8d); }
+    margin-right: 2.5rem; }
+    header a img {
+      height: 50px; }
 
 /* Main */
 main {
@@ -77,8 +74,8 @@ footer {
     margin-left: 1rem;
     margin-top: 1rem; }
   footer a {
-    color: black;
     text-decoration: none;
+    color: black;
     font-weight: bold;
     margin-right: 1rem; }
 
@@ -89,7 +86,7 @@ main .form-ingreso {
   margin: auto;
   margin-top: 3.5rem;
   margin-bottom: 1.45rem; }
-  main .form-ingreso h3 {
+  main .form-ingreso h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
