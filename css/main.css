@@ -17,11 +17,14 @@ header {
   grid-template-columns: 1fr 1fr 0.5fr;
   background-image: linear-gradient(to bottom, #f0b86e, white); }
   header .navbar {
-    margin-left: 1.5rem; }
+    margin-left: 1rem; }
     header .navbar .menu-hamburguesa {
       font-weight: bold; }
       header .navbar .menu-hamburguesa .dropdown-item {
         font-weight: bold; }
+      header .navbar .menu-hamburguesa .dropdown-item:active {
+        background-color: #f0b86e;
+        color: black; }
       header .navbar .menu-hamburguesa h1 {
         font-weight: bold; }
       header .navbar .menu-hamburguesa .offcanvas-header {
@@ -29,7 +32,8 @@ header {
   header .logo-lupa {
     display: none; }
   header .logo-usuario {
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-left: -2rem; }
     header .logo-usuario ul {
       list-style: none; }
       header .logo-usuario ul li a img {
@@ -60,6 +64,8 @@ main {
     main .cards-dos img {
       width: 48%;
       margin: auto; }
+    main .cards-dos .img-desktop {
+      display: none; }
 
 /* Footer */
 footer {
@@ -78,6 +84,8 @@ footer {
     color: black;
     font-weight: bold;
     margin-right: 1rem; }
+  footer a:hover {
+    color: black; }
 
 /* Estilos al login y register */
 /* Main */
@@ -85,7 +93,8 @@ main .form-ingreso {
   width: 20rem;
   margin: auto;
   margin-top: 3.5rem;
-  margin-bottom: 1.45rem; }
+  margin-bottom: 1.45rem;
+  padding-bottom: 17rem; }
   main .form-ingreso h2 {
     display: flex;
     justify-content: center;
@@ -93,11 +102,17 @@ main .form-ingreso {
     font-weight: bold; }
   main .form-ingreso .campo-usuario {
     font-weight: bold; }
+    main .form-ingreso .campo-usuario .form-control:focus {
+      border: 1px solid silver;
+      outline: 4px solid silver; }
   main .form-ingreso .campo-contraseña {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
     font-weight: bold; }
+    main .form-ingreso .campo-contraseña .form-control:focus {
+      border: 1px solid silver;
+      outline: 4px solid silver; }
     main .form-ingreso .campo-contraseña .link-olvipwd a {
       color: black;
       text-decoration: none; }
@@ -132,6 +147,10 @@ main .filtro .offcanvas .offcanvas-header {
 main .filtro .offcanvas .offcanvas-body .dropdown button {
   font-weight: bold; }
 
+main .filtro .offcanvas .offcanvas-body .dropdown .dropdown-menu .dropdown-item:active {
+  background-color: #f0b86e;
+  color: black; }
+
 main .cards-remeras {
   display: flex;
   flex-direction: column;
@@ -149,12 +168,20 @@ main .cards-remeras {
       main .cards-remeras .card .card-logos a img {
         width: 25px;
         height: 25px; }
+    main .cards-remeras .card .card-body h4 {
+      font-weight: bold; }
+    main .cards-remeras .card .card-body p {
+      font-weight: bold; }
+      main .cards-remeras .card .card-body p span {
+        display: block; }
 
 /* Estilos eleccion */
 /* Main */
 main .eleccion {
   margin: auto;
-  width: 28rem; }
+  width: 18rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem; }
   main .eleccion .card-body .card-title {
     font-weight: bold; }
   main .eleccion .card-body .card-text {
@@ -230,6 +257,14 @@ main .eleccion {
         transform: scale(1.3); }
   main .card-uno {
     display: none; }
+  main .cards-dos {
+    display: flex;
+    flex-wrap: wrap; }
+    main .cards-dos img {
+      width: 35%;
+      height: 35%; }
+    main .cards-dos .img-desktop {
+      display: flex; }
   /*  Login y Register main */
   main .form-ingreso {
     margin-top: 1rem;
@@ -241,6 +276,8 @@ main .eleccion {
     padding-top: 2rem;
     padding-bottom: 2rem; }
   /* Remeras main */
+  main .filtro .offcanvas .offcanvas-body .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #f0b86e; }
   main .cards-remeras {
     display: flex;
     flex-direction: row;
@@ -250,7 +287,10 @@ main .eleccion {
     display: flex;
     flex-direction: row;
     width: 90%;
-    height: 32.35rem; }
+    height: 35rem;
+    margin-top: 0rem; }
     main .eleccion .card-body {
       text-align: center;
-      align-self: center; } }
+      align-self: center; }
+      main .eleccion .card-body p span {
+        display: block; } }

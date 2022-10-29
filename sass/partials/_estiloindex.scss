@@ -5,11 +5,15 @@ header{
     grid-template-columns: 1fr 1fr 0.5fr;
     background-image: linear-gradient(to bottom, $color-principal, rgb(255, 255, 255));
     .navbar{
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         .menu-hamburguesa{
             font-weight: $letra-negrita;
             .dropdown-item{
                 font-weight: $letra-negrita;
+            }
+            .dropdown-item:active{
+                background-color: $color-principal;
+                color: black;
             }
             h1{
                 font-weight: $letra-negrita;
@@ -24,10 +28,13 @@ header{
     }
     .logo-usuario{
         margin-top: 10px;
+        margin-left: -2rem;
         ul{
             list-style: none;
-            li a img{
-                @include logos(30px, 30px);
+            li{
+                a img{
+                    @include logos(30px, 30px);
+                }
             }
         }
     }
@@ -70,6 +77,9 @@ main{
             width: 48%;
             margin: auto;
         }
+        .img-desktop{
+            display: none;
+        }
     }
 }
 
@@ -90,6 +100,9 @@ footer{
         color: black;
         font-weight: $letra-negrita;
         margin-right: 1rem;
+    }
+    a:hover{
+        color: black;
     }
 }
 

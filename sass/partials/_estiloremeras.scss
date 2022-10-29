@@ -22,6 +22,12 @@ main{
                     button{
                         font-weight: $letra-negrita;
                     }
+                    .dropdown-menu{
+                        .dropdown-item:active{
+                            background-color: $color-principal;
+                            color: black;
+                        }
+                    }
                 }
             }
         }
@@ -45,6 +51,17 @@ main{
                 a{
                     img{
                         @include logos(25px, 25px);
+                    }
+                }
+            }
+            .card-body{
+                h4{
+                    font-weight: $letra-negrita;
+                }
+                p{
+                    font-weight: $letra-negrita;
+                    span{
+                        display: block;
                     }
                 }
             }
